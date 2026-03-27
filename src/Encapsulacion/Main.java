@@ -9,10 +9,11 @@ public class Main {
         ejercicio4();
         ejercicio5();
         ejercicio6();
+        ejercicio7();
     }
 
     public static void ejercicio1() {
-        System.out.println("========== Ejercicio 1 Persona");
+        System.out.println(" Ejercicio 1 Persona");
 
         Persona per1 = new Persona("Gesler", "Duque", 19);
         Persona per2 = new Persona("Daniel", "Medina", 18);
@@ -137,5 +138,26 @@ public class Main {
 
         System.out.println();
     }
+    public static void ejercicio7() {
+        System.out.println("Ejercicio7 Fecha");
+
+        Fecha fecha1 = new Fecha(15, 8, 2025);
+        Fecha fecha2 = new Fecha(32, 4, 2024);
+        Fecha fecha3 = new Fecha(10, 13, 2023);
+
+        System.out.println("\nFecha 1:");
+        fecha1.mostrar();
+        System.out.println("Es valida? " + fecha1.esValida());
+
+        System.out.println("\nFecha 2:");
+        fecha2.mostrar();
+        System.out.println("Es valida? " + fecha2.esValida());
+
+        System.out.println("\nFecha 3:");
+        fecha3.mostrar();
+        System.out.println("Es valida? " + fecha3.esValida());
+
+        System.out.println();
 	}
 
+}
